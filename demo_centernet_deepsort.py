@@ -5,8 +5,8 @@ import numpy as np
 
 #CenterNet
 import sys
-CENTERNET_PATH = '/home/asoft/centerNet-deep-sort/CenterNet/src/lib/'
-sys.path.insert(0, CENTERNET_PATH)
+CENTERNET_PATH = 'CenterNet/src/lib/'
+sys.path.insert(0, os.path.join(sys.path[0], CENTERNET_PATH))
 from detectors.detector_factory import detector_factory
 from opts import opts
 
